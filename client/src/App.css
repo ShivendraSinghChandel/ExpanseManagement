@@ -1,0 +1,51 @@
+
+
+#header
+{
+  width: 100%;
+  height: 100px;
+  background-color: lightblue;
+  display: flex;
+  justify-content: space-between;
+}
+
+#headermdl
+{
+  font-size: 30px;
+  color: rgb(10, 73, 141);
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+#headerrgt
+{
+  padding-top: 30px;
+  padding-right: 30px;
+}
+
+#loginform
+{
+  
+  width: 500px;
+  margin: auto;
+  border: 3px solid rgb(152, 198, 241);
+  background-color: lightblue;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 50px;
+  box-shadow: 3px 3px rgb(129, 148, 154);
+
+}
+
+#footer 
+{
+  width: 100%;
+  height: 2px;
+  background-color: grey;
+  margin-top: 100px;
+}
+
+#reportdata{
+  display: flex;
+  justify-content: space-between;
+}
