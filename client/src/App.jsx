@@ -6,6 +6,7 @@ import DisplayEarning from './Components/DisplayEarning';
 import Expanse from './Components/Expanse';
 import DisplayExpenses from './Components/DisplayExpanses';
 import UserReport from './Components/UserReport';
+import PieChart from './Components/PieChart';
 const App=()=>{
   return(
     <>
@@ -20,6 +21,7 @@ const App=()=>{
             <Route path='displayern' element={<DisplayEarning/>}/>
             <Route path='displayexpa' element={<DisplayExpenses/>}/>
             <Route path='userreport' element={<UserReport/>}/>
+            <Route path='basicpie' element={<PieChart/>}/>
 
             </Route>
          </Routes>

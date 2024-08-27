@@ -57,10 +57,20 @@ const displayReports=async(req,res)=>{
 
     res.status(200).send({mydata1:mydata1,mydata2:mydata2});
 }
+
+const userTotalExpanse=async(req,res)=>{
+    const {id}=req.body;
+    const transdata=await transModel.find({user:id});
+    const transdata1= await expanseModel.find({user:id});
+    res.status(200).send({ernData:transdata,expData:transdata1});
+    
+}
+
 module.exports={
     amountSave,
     displayEarning,
     expanseSave,
     displayExpanses,
-    displayReports
+    displayReports,
+    userTotalExpanse
 }

@@ -11,6 +11,8 @@ route.post("/expansesave",transactionController.expanseSave);
 
 route.post("/displayexpanses",transactionController.displayExpanses);
 
-route.post("/displayreport",transactionController.displayReports)
+route.post("/displayreport",transactionController.displayReports);
+
+route.post("/usertotalexpanse",transactionController.userTotalExpanse);
 
 module.exports=route;
