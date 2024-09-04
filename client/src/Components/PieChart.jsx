@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState,useEffect } from "react";
-const PieChart=()=>{
+import {PieChart} from '@mui/x-charts/PieChart';
+const BasicPie=()=>{
     const [mydata,setMydata]=useState([]);
     const [mydata1,setMydata1]=useState([]);
     const [uid,setUid]=useState();
@@ -26,7 +27,7 @@ const PieChart=()=>{
         totalearning+=key.amount;
     })
     let totalexpanse=0;
-    mydata.map((key)=>{
+    mydata1.map((key)=>{
         totalexpanse+=key.amount;
     })
 
@@ -37,8 +38,8 @@ const PieChart=()=>{
   series={[
     {
       data: [
-        { id: 0, value: {totalearning}, label: 'Earning' },
-        { id: 1, value: {totalexpanse}, label: 'Expanses' },
+        { id: 0, value: totalearning, label: 'Earning' },
+        { id: 1, value: totalexpanse, label: 'Expanses' },
       ],
     },
   ]}
@@ -50,4 +51,4 @@ const PieChart=()=>{
     )
 }
 
-export default PieChart;
+export default BasicPie;

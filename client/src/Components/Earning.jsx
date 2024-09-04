@@ -2,6 +2,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import axios from "axios";
 import { useEffect, useState } from "react";
+import {message} from 'antd'
 
 const Earning=()=>{
     const [uid,setUid]=useState();
@@ -24,7 +25,7 @@ const Earning=()=>{
         e.preventDefault();
         let api="http://localhost:8080/transactions/amountsave";
         axios.post(api,{...input,id:uid}).then((res)=>{
-            alert("Earning saved successfully");
+            message.success("Data Saved");
         })
     }
     return(
